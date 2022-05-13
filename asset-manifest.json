@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/URL-shortening-API-landing-page/static/css/main.9436b241.css",
+    "main.js": "/URL-shortening-API-landing-page/static/js/main.ce578b6e.js",
+    "static/media/illustration-working.svg": "/URL-shortening-API-landing-page/static/media/illustration-working.c9b5ef5452363d8be3df709375d50bd0.svg",
+    "static/media/logo-white.svg": "/URL-shortening-API-landing-page/static/media/logo-white.f4ffcbaea8b8e859063c670a1d640ac0.svg",
+    "static/media/logo.svg": "/URL-shortening-API-landing-page/static/media/logo.834643034343520f3b4d7e43111ed4d8.svg",
+    "static/media/icon-fully-customizable.svg": "/URL-shortening-API-landing-page/static/media/icon-fully-customizable.a1532a74fa781f6fde327313bd5ffce3.svg",
+    "static/media/icon-brand-recognition.svg": "/URL-shortening-API-landing-page/static/media/icon-brand-recognition.c349d3b69f7442e5ac3552e4138e72e7.svg",
+    "static/media/bg-boost-desktop.svg": "/URL-shortening-API-landing-page/static/media/bg-boost-desktop.772154c9b0e451733f5e.svg",
+    "static/media/icon-detailed-records.svg": "/URL-shortening-API-landing-page/static/media/icon-detailed-records.265c8aea77b546e08ba3575f6a8a9f70.svg",
+    "static/media/icon-instagram.svg": "/URL-shortening-API-landing-page/static/media/icon-instagram.df5873287e1c06a0fe74440f6ccd8394.svg",
+    "static/media/icon-pinterest.svg": "/URL-shortening-API-landing-page/static/media/icon-pinterest.a2d25ab4c70b78c4028f25323009cc58.svg",
+    "static/media/bg-boost-mobile.svg": "/URL-shortening-API-landing-page/static/media/bg-boost-mobile.4b04bd89ea775da3deff.svg",
+    "index.html": "/URL-shortening-API-landing-page/index.html",
+    "static/media/icon-twitter.svg": "/URL-shortening-API-landing-page/static/media/icon-twitter.1d5c6d5e6ab1717a500af2df0a87959a.svg",
+    "static/media/icon-facebook.svg": "/URL-shortening-API-landing-page/static/media/icon-facebook.229c75a01827343aef31ae916e2ec18a.svg",
+    "main.9436b241.css.map": "/URL-shortening-API-landing-page/static/css/main.9436b241.css.map",
+    "main.ce578b6e.js.map": "/URL-shortening-API-landing-page/static/js/main.ce578b6e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9436b241.css",
+    "static/js/main.ce578b6e.js"
+  ]
+}
