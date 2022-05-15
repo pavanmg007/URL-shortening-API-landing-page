@@ -1,13 +1,14 @@
 import React from 'react'
+import Shortener from './Shortener'
 import brand from '../images/icon-brand-recognition.svg'
 import detail from '../images/icon-detailed-records.svg'
 import fully from '../images/icon-fully-customizable.svg'
 
 export default function Advanced() {
     return (
-        <>
-            <section className="bg-slate-200 md:pb-36 md:pt-10">
-                <h2 className="font-bold text-center py-5 text-2xl md:text-4xl text-very-dark-violet ">Advanced Statistics</h2>
+            <section className="relative bg-slate-200 md:pb-36 md:pt-10">
+                <Shortener/>
+                <h2 className="font-bold text-center pt-24 py-10 text-3xl md:text-4xl text-dark-blue ">Advanced Statistics</h2>
                 <p className="text-center px-4 md:px-60 lg:mx-32 mx-5 text-grayish-violet mb-20">Track how your links are performing across the web with our
                     advanced statistics dashboard.</p>
                 <div className="relative grid grid-cols-1 md:grid-cols-3 gap-14 md:px-0 max-width">
@@ -33,6 +34,5 @@ export default function Advanced() {
                     </article>
                 </div>
             </section>
-        </>
     )
 }

@@ -1,12 +1,13 @@
 import React from "react";
 import { useState } from "react";
 import logo from "../images/logo.svg"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { solid} from '@fortawesome/fontawesome-svg-core/import.macro'
 
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <>
             <header className="header max-width py-2 my-5">
                 <div className="flex items-center justify-between md:pt-8">
                     <div className="flex">
@@ -25,7 +26,6 @@ export default function Header() {
                     </ul>
                     {isOpen && (
                         <div className="absolute md:hidden text-white left-5 right-5 top-20 rounded-md py-5 bg-dark-violet">
-                            <img className="mr-4" src={logo} alt="logo" />
                             <nav>
                                 <ul className="flex flex-col items-center">
                                     <li className="my-2"><button className="font-bold">Features</button></li>
@@ -40,10 +40,8 @@ export default function Header() {
                             </ul>
                         </div>
                     )}
-                    <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-sm tracking-wide" >{isOpen ? "CLOSE" : "MENU"}</button>
+                    <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-sm tracking-wide" >{isOpen ? <FontAwesomeIcon icon={solid('bars-staggered')} /> : <FontAwesomeIcon icon={solid('bars')} />}</button>
                 </div>
-
             </header>
-        </>
     );
 }
