@@ -43,7 +43,7 @@ export default function Shortener() {
           </div>
         </div>
         <div className="pb-20"></div>
-        <div className="w-11/12 mt-4 mx-5 bg-white rounded-md max-width md:flex md:py-3 justify-between">
+        <div className="w-11/12 mt-4 mx-5 bg-white rounded-md md:flex md:py-3 md:mx-auto md:w-4/6 justify-between">
           <a href="https://www.frontendmentor.io" className="block mx-5 py-3">
             https://www.dummy.io/long-url-goes-here
           </a>
