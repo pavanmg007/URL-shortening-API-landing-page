@@ -7,26 +7,9 @@ import fully from "../images/icon-fully-customizable.svg";
 export default function Advanced() {
   return (
     <>
-      <section className=" bg-slate-200 md:pb-36 md:pt-10">
-        <Shortener />
-        <div className="pb-20"></div>
-        <div className="w-11/12 mt-4 mx-5 bg-white rounded-md max-width md:flex md:py-3 justify-between">
-          <a href="https://www.frontendmentor.io" className="block mx-5 py-3">
-            https://www.dummy.io/long-url-goes-here
-          </a>
-          <hr className="opacity-30 md:hidden" />
-          <div className="md:flex">
-            <a href="https://www.frontendmentor.io" className="block mx-5 py-3 text-Cyan">
-              https://short.url
-            </a>
-            <button className="w-11/12 mx-5 mb-4 md:mb-0 text-white font-semibold bg-Cyan hover:bg-cyan-200 md:px-6 py-3 px-28 rounded-md md:w-auto">
-              Copy
-            </button>
-          </div>
-        </div>
-      </section>
+      <Shortener />
       <section className="bg-slate-200 md:pb-36 md:pt-24">
-        <h2 className="font-bold text-center pt-24 py-10 text-3xl md:text-4xl text-dark-blue ">
+        <h2 className="font-bold text-center pt-4 py-10 text-3xl md:text-4xl text-dark-blue ">
           Advanced Statistics
         </h2>
         <p className="text-center px-4 md:px-60 lg:mx-32 mx-5 text-grayish-violet mb-20">
