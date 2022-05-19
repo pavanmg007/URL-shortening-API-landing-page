@@ -1,8 +1,20 @@
-import React, { useState } from "react";
-// https://api.shrtco.de/v2/shorten?url={url}
+import React, { useEffect, useState } from "react";
+import Shortenedurl from "./Shortenedurl";
+
+const getLocalStorage = () => {
+  let links = localStorage.getItem("links");
+  if (links) {
+    return JSON.parse(localStorage.getItem("links"));
+  } else {
+    return [];
+  }
+};
+
 export default function Shortener() {
   const [text, setText] = useState("");
-  const [links, setLinks] = useState([]);
+  const [links, setLinks] = useState(getLocalStorage());
+  const [btntxt, setBtnTxt] = useState("Copy");
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!text) {
@@ -11,13 +23,16 @@ export default function Shortener() {
       const shortenLink = async () => {
         const res = await fetch(`https://api.shrtco.de/v2/shorten?url=${text}`);
         const data = await res.json();
-        console.log(data.result);
-        setLinks(data.result);
+        setLinks([data.result, ...links]);
         setText("");
       };
       shortenLink();
     }
   };
+
+  useEffect(() => {
+    localStorage.setItem("links", JSON.stringify(links));
+  }, [links]);
   return (
     <>
       <section className=" bg-slate-200 md:pt-10">
@@ -43,20 +58,7 @@ export default function Shortener() {
           </div>
         </div>
         <div className="pb-20"></div>
-        <div className="w-11/12 mt-4 mx-5 bg-white rounded-md md:flex md:py-3 md:mx-auto md:w-4/6 justify-between">
-          <a href="https://www.frontendmentor.io" className="block mx-5 py-3">
-            https://www.dummy.io/long-url-goes-here
-          </a>
-          <hr className="opacity-30 md:hidden" />
-          <div className="md:flex">
-            <a href="https://www.frontendmentor.io" className="block mx-5 py-3 text-Cyan">
-              https://short.url
-            </a>
-            <button className="w-11/12 mx-5 mb-4 md:mb-0 text-white font-semibold bg-Cyan hover:bg-cyan-200 md:px-6 py-3 px-28 rounded-md md:w-auto">
-              Copy
-            </button>
-          </div>
-        </div>
+        <Shortenedurl sendlinks={links} btntext={btntxt} />
       </section>
     </>
   );
