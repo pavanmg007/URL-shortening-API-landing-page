@@ -28,8 +28,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./assets/Screenshot-Desktop.png)
-
+<p>
+<img src="./assets/Screenshot-Desktop.png" width="60%">
+</p>
 ### Links
 
 - Solution URL: [https://github.com/pavanmg007/URL-shortening-API-landing-page](https://github.com/pavanmg007/URL-shortening-API-landing-page)
