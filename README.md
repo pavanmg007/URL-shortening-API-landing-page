@@ -50,7 +50,7 @@ Users should be able to:
 
 ### What I learned
 
-I have learnt how to store items in local storage in JSON
+I have learnt how useEffect Hook & Dependency Array  works. Also go to know avout storing items in local storage in JSON
 
 ```js
 useEffect(() => {
