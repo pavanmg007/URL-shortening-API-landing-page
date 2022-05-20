@@ -20,6 +20,7 @@ export default function Shortener() {
     if (!text) {
       document.querySelector(".error").innerText = "Please enter Valid URL";
     } else {
+      document.querySelector(".error").innerText = "";
       const shortenLink = async () => {
         const res = await fetch(`https://api.shrtco.de/v2/shorten?url=${text}`);
         const data = await res.json();
