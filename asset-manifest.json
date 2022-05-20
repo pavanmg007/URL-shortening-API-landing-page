@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/URL-shortening-API-landing-page/static/css/main.2757d3ff.css",
-    "main.js": "/URL-shortening-API-landing-page/static/js/main.be5d1bfc.js",
+    "main.css": "/URL-shortening-API-landing-page/static/css/main.204f43e6.css",
+    "main.js": "/URL-shortening-API-landing-page/static/js/main.11870cfb.js",
     "static/media/illustration-working.svg": "/URL-shortening-API-landing-page/static/media/illustration-working.c9b5ef5452363d8be3df709375d50bd0.svg",
     "static/media/logo-white.svg": "/URL-shortening-API-landing-page/static/media/logo-white.f4ffcbaea8b8e859063c670a1d640ac0.svg",
     "static/media/logo.svg": "/URL-shortening-API-landing-page/static/media/logo.834643034343520f3b4d7e43111ed4d8.svg",
@@ -15,11 +15,11 @@
     "index.html": "/URL-shortening-API-landing-page/index.html",
     "static/media/icon-twitter.svg": "/URL-shortening-API-landing-page/static/media/icon-twitter.1d5c6d5e6ab1717a500af2df0a87959a.svg",
     "static/media/icon-facebook.svg": "/URL-shortening-API-landing-page/static/media/icon-facebook.229c75a01827343aef31ae916e2ec18a.svg",
-    "main.2757d3ff.css.map": "/URL-shortening-API-landing-page/static/css/main.2757d3ff.css.map",
-    "main.be5d1bfc.js.map": "/URL-shortening-API-landing-page/static/js/main.be5d1bfc.js.map"
+    "main.204f43e6.css.map": "/URL-shortening-API-landing-page/static/css/main.204f43e6.css.map",
+    "main.11870cfb.js.map": "/URL-shortening-API-landing-page/static/js/main.11870cfb.js.map"
   },
   "entrypoints": [
-    "static/css/main.2757d3ff.css",
-    "static/js/main.be5d1bfc.js"
+    "static/css/main.204f43e6.css",
+    "static/js/main.11870cfb.js"
   ]
 }
