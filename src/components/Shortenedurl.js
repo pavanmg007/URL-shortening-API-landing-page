@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Shortenedurl(props) {
-  const { sendlinks, btntext } = props;
+  const [copyindex, setCopyIndex] = useState();
+  const { sendlinks } = props;
+  const handleCopy = (url) => {
+    navigator.clipboard.writeText(url);
+  };
   return (
     <>
-      {sendlinks.map((data) => {
+      {sendlinks.map((data, index) => {
         return (
           <div
             className="w-11/12 mt-4 mx-5 bg-white rounded-md md:flex md:py-3 md:mx-auto md:w-4/6 justify-between"
@@ -20,12 +24,12 @@ export default function Shortenedurl(props) {
               </a>
               <button
                 onClick={() => {
-                  navigator.clipboard.writeText(data.full_short_link);
-                  console.log(`copied ${data.full_short_link}`);
+                  handleCopy(data.full_short_link);
+                  setCopyIndex(index);
                 }}
                 className="w-11/12 mx-5 mb-4 md:mb-0 text-white font-semibold bg-Cyan hover:bg-cyan-200 md:px-6 py-3 px-28 rounded-md md:w-auto"
               >
-                {btntext}
+                {copyindex === index ? "Copied" : "Copy"}
               </button>
             </div>
           </div>

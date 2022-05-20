@@ -13,7 +13,6 @@ const getLocalStorage = () => {
 export default function Shortener() {
   const [text, setText] = useState("");
   const [links, setLinks] = useState(getLocalStorage());
-  const [btntxt, setBtnTxt] = useState("Copy");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -34,12 +33,13 @@ export default function Shortener() {
   useEffect(() => {
     localStorage.setItem("links", JSON.stringify(links));
   }, [links]);
+
   return (
     <>
       <section className=" bg-slate-200 md:pt-10">
         <div className="absolute w-11/12 md:w-4/6 bg-dark-violet bg-no-repeat bg-cover bg-bg-mobile md:bg-bg-desktop left-2/4 -translate-x-1/2 -mt-20 md:-mt-28 lg:-mt-24 rounded-2xl md:rounded-md ">
           <div className="relative mx-6 md:mx-10 py-6 md:py-10 lg:flex">
-            <form className="lg:flex lg:w-full" onSubmit={handleSubmit}>
+            <form className="lg:flex lg:w-full justify-around" onSubmit={handleSubmit}>
               <input
                 className="block w-full lg:w-4/5 py-3 rounded-md pl-3"
                 type="url"
@@ -48,7 +48,7 @@ export default function Shortener() {
                 onChange={(e) => setText(e.target.value)}
               />
               <button
-                className="block w-full lg:w-auto mx-auto bg-Cyan rounded-md text-white py-2 md:px-8 lg:ml-4 mt-4 md:mt-4 lg:mt-0"
+                className="block w-full lg:w-auto mx-auto bg-Cyan rounded-md text-white py-2 md:px-8 lg:ml-4 md:mr-0 mt-4 md:mt-4 lg:mt-0"
                 type="submit"
                 onClick={handleSubmit}
               >
@@ -59,7 +59,7 @@ export default function Shortener() {
           </div>
         </div>
         <div className="pb-20"></div>
-        <Shortenedurl sendlinks={links} btntext={btntxt} />
+        <Shortenedurl sendlinks={links} />
       </section>
     </>
   );
