@@ -18,7 +18,7 @@ export default function Shortenedurl(props) {
               {data.original_link}
             </a>
             <hr className="opacity-30 md:hidden" />
-            <div className="md:flex">
+            <div className="md:flex md:items-center">
               <a href={data.full_short_link} className="block mx-5 py-3 text-Cyan">
                 {data.full_short_link}
               </a>
@@ -27,7 +27,7 @@ export default function Shortenedurl(props) {
                   handleCopy(data.full_short_link);
                   setCopyIndex(index);
                 }}
-                className="w-11/12 mx-5 mb-4 md:mb-0 text-white font-semibold bg-Cyan hover:bg-cyan-200 md:px-6 py-3 px-28 rounded-md md:w-auto"
+                className="w-11/12 mx-5 mb-4 md:mb-0 text-white font-semibold bg-Cyan hover:bg-cyan-200 md:px-6 py-3 px-28 rounded-md md:w-auto md:self-center"
               >
                 {copyindex === index ? "Copied" : "Copy"}
               </button>
